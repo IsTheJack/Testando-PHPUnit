@@ -1,6 +1,6 @@
 <?php
-require 'class/FiltroDeLances.php';
-require 'class/Usuario.php';
+require_once 'class/FiltroDeLances.php';
+require_once 'class/Usuario.php';
 
 class FiltroDeLancesTest extends PHPUnit_Framework_TestCase
 {

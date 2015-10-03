@@ -1,5 +1,5 @@
 <?php
-require 'class/MatematicaMaluca.php';
+require_once 'class/MatematicaMaluca.php';
 
 /**
  * MatematicaMalucaTest

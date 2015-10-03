@@ -1,5 +1,5 @@
 <?php
-require 'Lance.php';
+require_once 'Lance.php';
 
 class FiltroDeLances
 {

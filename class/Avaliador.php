@@ -9,6 +9,9 @@ class Avaliador
 	private $maiores;
 
 	public function avalia(Leilao $leilao) {
+		if (count($leilao->getLances()) == 0)
+			throw new InvalidArgumentException("Um leilão deve te rao menos 1 lance dado.");
+			
 		foreach ($leilao->getLances() as $lance) {
 			$this->somaLances += $lance->getValor();
 			$this->maiorValor = $lance->getValor() > $this->maiorValor? $lance->getValor(): $this->maiorValor;
